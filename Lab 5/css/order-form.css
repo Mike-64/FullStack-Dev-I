@@ -1,0 +1,44 @@
+body{
+    background-color: whitesmoke;             
+}
+#button-container{
+    text-align: center;
+}
+#orderForm{
+    border: 1px solid black;
+    border-radius: 10px;
+    line-height: 1.5em;
+    padding: 10px;
+    background-color:lavender;
+}
+fieldset{
+    border-radius: 10px;
+}
+input,label{
+    float:left;
+}
+#orderForm label{
+    cursor:pointer; 
+    width:120px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+}
+.details{
+    display:block;
+    
+}
+#submit-form{
+    background-color: seagreen;
+    color:white;
+    font-weight: 300;
+    font-size: medium;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    
+}
+#submit-form:hover{
+    background-color:mediumseagreen
+    
+}
