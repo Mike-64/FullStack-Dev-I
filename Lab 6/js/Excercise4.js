@@ -1,0 +1,12 @@
+a=10
+b=20
+c=5
+console.log(a+b)
+console.log(a*b)
+console.log(b-c)
+d=null
+e="40"
+f=undefined
+console.debug(d+10)
+console.debug(e+100)
+console.error(f+1000)
