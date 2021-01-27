@@ -1,0 +1,145 @@
+/*Main Body styles*/
+header{
+    background-color: #1b1b1b;
+    margin: 0;
+    display: block;
+    font-size: 1.75em;
+    font-weight: bold;
+    color:white;
+    height: 30px;
+    padding: 20px;
+}
+body{
+    margin: 0;
+}
+.details
+{
+    padding :20px;
+}
+.main{
+    margin: 16px;
+    padding:0 20px;
+}
+.headline,.newCard{
+    font-weight: bold;
+}
+.title,.card-icon{
+    display: inline-block;
+}
+.main{
+    display: grid;
+    grid-template-columns: 70% 30% ;
+}
+/*card Images*/
+.amex{
+    margin: 0 10px 10px 0;  
+    display: inline-block;    
+    width: 35px;
+    height: 35px;
+    background: url('../images/American_express_logo_shorthand.svg');
+    background-repeat: no-repeat;
+    background-size: 35px auto;
+}
+.visa{
+    margin: 0 10px 10px 0; 
+    display: inline-block;
+    width: 40px;
+    height:24px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1024px-Visa_Inc._logo.svg.png') no-repeat;
+    background-size: 40px auto;
+}
+.mc{
+    margin: 0 10px 10px 0; 
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url('https://nudatasecurity.com/wp-content/uploads/2017/03/Mastercard-logo-sq.png') no-repeat;
+    background-size:35px auto;
+}
+/*Form Styles*/
+.input-container label{
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+fieldset{
+    border: none;
+}
+.input-container{
+    padding:10px 10px 10px 0;
+}
+input,select{
+    display: block;
+    height: 30px;
+    margin: 0 0 10px 0;
+    border: 0.1em solid;
+    border-radius: 4px;
+}
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin:0;
+}
+#cardNumber{
+    width: 50%;
+}
+#month{
+    display: inline-block;
+    width:25%;
+}
+#year{
+    display: inline-block;
+    width:15%;
+}
+select{
+    width:100%;
+}
+label[for="cvv"]{
+    display: block;
+    padding-left:2px; 
+}
+#cvv{
+    width: 7%;
+    display: inline-block;
+}
+.help-txt{
+    display: inline-block;
+    padding:0 10px;
+    margin: 0 20px;
+}
+.help-txt::before{
+    content:open-quote;
+}.help-txt::after{
+    content:close-quote;
+}
+/*Summary section Styles*/
+.summary{
+    padding: 50px;
+}
+table{
+    margin: 0;
+}
+td.odd{
+    width: 100%;
+}
+td.even{
+    width:30%;
+}
+#submit-button{
+    width: 100%;
+    padding:7px;
+    margin: 20px 0 0 0;
+    border: none;
+    border-radius: 4px;
+    background-color: goldenrod;
+    box-shadow: 3px 2px 3px #1b1b1b;
+}
+#submit-button:hover,#submit-button:active{
+background-color: #f0b41c;
+outline: none;
+}
+
+.fa-shopping-cart{
+    padding:0 5px;
+    size: 7px ;
+}

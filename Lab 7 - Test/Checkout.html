@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+    <header>
+        Payment
+    </header>
+    <div class="details">
+        <div>
+            <h3 class="title">Credit Card</h3>
+            <span class="card-icon"><i class="far fa-credit-card"></i></span>
+            <hr>
+        </div>
+        <div class="main">
+            <div class="creditCard">
+                <p class="headline">Card Information</p>
+                <fieldset>
+                    <div>
+                        <div class="newCard">New Card</div>
+                        <div style="margin-top: 16px;">
+                            <div class="container">
+                                <p>We accept the following cards.</p>
+                                <span
+                                    class="credit-card-logo visa space inline "></span><span
+                                    class="credit-card-logo mc space inline"></span><span
+                                    class="credit-card-logo amex space inline"></span><input type="hidden"
+                                    name="creditCardType" id="creditCardType" value="">
+                                <form action="" id="card-information">
+                                <div class="input-container ">
+                                    <label for="cardNumber">Card Number</label>
+                                    <input type="number" id="cardNumber" placeholder="Your Card Number" pattern="[*0-9 ]*" required>
+                                </div>
+
+
+                                <div class="input-container " id="month">
+                                    <label for="expirationMonth">Expiry Month</label>
+                                    <select id="expirationMonth" name="expirationMonth" placeholder="" required>
+                                        <option hidden disabled selected value>Choose Month</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-container " id="year">
+                                    <label for="expirationYear">Expiry Year</label>
+                                    <select id="expirationYear" name="expirationYear" placeholder="" required>
+                                        <option hidden disabled selected value>Choose Year</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                        <option value="2031">2031</option>
+                                        <option value="2032">2032</option>
+                                        <option value="2033">2033</option>
+                                        <option value="2034">2034</option>
+                                        <option value="2035">2035</option>
+                                        <option value="2036">2036</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-container ">
+                                    <label for="cvv">CVV</label>
+                                    <input type="number" id="cvv" placeholder="CVV" maxlength=4 required>
+
+                                    <div class="help-txt">This 3 or 4 digit code is on the back or front of your
+                                        card.</div>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="summary">
+                <h3>Order Summary</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="odd">Product Subtotal</td>
+                            <td class="even">$169.90</td>
+                        </tr>
+                        <tr>
+                            <td class="odd">Estimated Shipping</td>
+                            <td class="even">$4.20</td>
+                        </tr>
+                        <tr>
+                            <td class="odd">Estimated Taxes</td>
+                            <td class="even">$3.90</td>
+                        </tr>
+                    </tbody>
+                </table>
+                        <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="odd">Estimated Total</td>
+                            <td class="even">$178.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="submit" id="submit-button" form="card-information">Proceed to Checkout<span><i class="fas fa-shopping-cart"></i></span></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
