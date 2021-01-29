@@ -1,6 +1,9 @@
 # FullStack-Dev-I
 
-Michael Francis - 101300443
+### Michael Francis
+
+101300443
+
 MichaelFrancis.JeromeVictor@georgebrown.ca
 
 
