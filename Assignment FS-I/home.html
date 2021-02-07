@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Music Library</h1>
+    </header>
+    <form action="" id="search-form">
+        <div class="fields">
+            <label for="artist">Artist</label><input type="text" id="artist" class="form-control" placeholder="enter a artist name">
+            <label for="song">Song</label><input type="text" id="song" class="form-control" placeholder="enter a song name">
+            <label for="album">Album</label><input type="text" id="album" class="form-control" placeholder="enter a album name">
+            <label for="genre">Genre</label><select id="genre" class="form-control" aria-placeholder="select genre">
+                <option></option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="jazz">Jazz</option>
+                <option value="heavymetal">Heavy Metal</option>
+                <option value="blues">Blues</option>
+                <option value="instrumental">Instrumental</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button type="submit" id="filter-search" form="search-from" class="btn btn-light" >Search<span><i class="fas fa-search search"></i></span></button>
+            <button type="reset" id="reset-search" form="search-from" class="btn btn-light" >Reset<span><i class="fas fa-redo reset"></i></span></button>
+        </div>
+    </form>
+    <main class="content-container">
+        <div class="album-cover">
+            <span class="cover"><img src="./images/cover 1.jpg" alt="album covers"></span>
+            <span class="cover"><img src="./images/cover 2.jpg" alt="album covers"></span>
+            <span class="cover"><img src="./images/cover 3.png" alt="album covers"></span>
+            <span class="cover"><img src="./images/cover 4.png" alt="album covers"></span>
+            <span class="cover"><img src="./images/cover 5.jpg" alt="album covers"></span>
+        </div>
+        <div class="song-list">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Artist</th>
+                        <th>Song</th>
+                        <th>Time</th>
+                        <th>Album</th>
+                        <th >Rating</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                <tr>
+                    <td>Michael Jackson</td>
+                    <td>Billie Jean</td>
+                    <td>4:54</td>
+                    <td>Thriller</td>
+                    <td>5</td>
+                    <td><button type="button" class="download-button btn btn-sm btn-success">Download<span><i class="far fa-arrow-alt-circle-down"></i></span></button></td>
+                </tr>
+                <tr>
+                    <td>AC/DC</td>
+                    <td>Back in Black</td>
+                    <td>4:14</td>
+                    <td>Back in Black</td>
+                    <td>5</td>
+                    <td><button type="button" class="download-button btn btn-sm btn-success">Download<span><i class="far fa-arrow-alt-circle-down"></i></span></button></td>
+                </tr>
+                <tr>
+                    <td>Meat Loaf</td>
+                    <td>Heaven Can Wait</td>
+                    <td>4:38</td>
+                    <td>Bat Out of Hell</td>
+                    <td>5</td>
+                    <td><button type="button" class="download-button btn btn-sm btn-success">Download<span><i class="far fa-arrow-alt-circle-down"></i></span></button></td>
+                </tr>
+                <tr>
+                    <td>Pink Floyd</td>
+                    <td>On the Run</td>
+                    <td>3:36</td>
+                    <td>The Dark Side of the Moon</td>
+                    <td>5</td>
+                    <td><button type="button" class="download-button btn btn-sm btn-success">Download<span><i class="far fa-arrow-alt-circle-down"></i></span></button></td>
+                </tr>
+                <tr>
+                    <td>Eagles</td>
+                    <td>New Kid in Town</td>
+                    <td>2:55</td>
+                    <td>Hotel California</td>
+                    <td>5</td>
+                    <td><button type="button" class="download-button btn btn-sm btn-success">Download<span><i class="far fa-arrow-alt-circle-down"></i></span></button></td>
+                </tr>
+                <tr>
+                    <td>Whitney Houston / Various artists</td>
+                    <td>I Will Always Love You</td>
+                    <td>4:31</td>
+                    <td>The Bodyguard</td>
+                    <td>5</td>
+                    <td><button type="button" class="download-button btn btn-sm btn-success">Download<span><i class="far fa-arrow-alt-circle-down"></i></span></button></td>
+                </tr>
+                <tr>
+                    <td>Eagles</td>
+                    <td>Take It Easy</td>
+                    <td>3:29</td>
+                    <td>Their Greatest Hits (1971–1975)</td>
+                    <td>5</td>
+                    <td><button type="button" class="download-button btn btn-sm btn-success">Download<span><i class="far fa-arrow-alt-circle-down"></i></span></button></td>
+                </tr>
+                <tr>
+                    <td>Bee Gees / Various artists</td>
+                    <td>More Than a Woman</td>
+                    <td>3:18</td>
+                    <td>Saturday Night Fever</td>
+                    <td>5</td>
+                    <td><button type="button" class="download-button btn btn-sm btn-success">Download<span><i class="far fa-arrow-alt-circle-down"></i></span></button></td>
+                </tr>
+                <tr>
+                    <td>Fleetwood Mac</td>
+                    <td>Don't Stop</td>
+                    <td>3:13</td>
+                    <td>Rumours</td>
+                    <td>5</td>
+                    <td><button type="button" class="download-button btn btn-sm btn-success">Download<span><i class="far fa-arrow-alt-circle-down"></i></span></button></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

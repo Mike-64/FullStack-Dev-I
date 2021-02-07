@@ -1,0 +1,96 @@
+/* Header section */
+header{
+    background-color:#5c5d6778;
+    color: #E9C46A;
+    height: 75px;
+}
+
+h1{
+    padding: 10px 20px;    
+}
+
+/* Body background*/
+body{
+    background: linear-gradient(rgb(175, 205, 210), rgb(190, 212, 213), rgb(205, 220, 216), rgb(220, 227, 219), rgb(235, 235, 222));
+}
+
+/* Search Form */
+form{
+    margin:30px auto;
+    padding:20px;
+    background-color: #288f8585;
+    border-radius: 7px;
+    width: 80%;
+}
+label{
+    cursor: pointer;
+    display: inline-flex;
+    color: white;
+    padding: 0 5px 0 30px;
+    font-size: larger;
+}
+.fields{
+    display: flex;
+    align-content: space-around;
+    padding: 10px;
+}
+input,select{
+    flex-grow: 1;
+    border-radius: 7px;
+    align-content: space-around;
+}
+
+/* Button styles */
+.buttons{
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: center;
+}
+form button{
+    flex: 1 1 auto;
+    margin: 15px 15px 0 15px!important;
+    font-size: 17px!important;
+    font-weight: 500!important;
+}
+form button span{
+    position: relative;
+    left: 15%;
+}
+.download-button span{
+    padding: 0 0 0 10px;
+}
+
+/* Table Margin */
+.song-list{
+    width: 80%;
+    margin: 0 auto;
+}
+thead{
+    background-color: #e9c46ac9;
+    color: #5C5D67;
+}
+table{
+    background-blend-mode: overlay;
+}
+/* Image section */
+.album-cover{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: baseline;
+    justify-content: center;
+    padding: 0 0 30px 0;
+    flex-wrap: nowrap;
+}
+.cover img{
+    width: 220px;
+    height: 200px;
+    padding:1px;
+    transition: 0.3s;
+}
+
+.cover img:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.06);
+}
